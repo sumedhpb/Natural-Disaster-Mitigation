@@ -6,11 +6,11 @@ To Build state-of-the-art technology to predict or manage natural disasters bett
 The idea is developed as a part of Microsoft Codefundo 2018.
 
 ## Inspiration
-------
+
 Natural disasters are sudden events such as floods, earthquakes, or hurricanes that cause humongous damage to both human lives and earth's resources. Though they can't be prevented, with meticulous planning and sagacious implementation they can be mitigated. Nutural Disasters are the time of chaos and panic where a small idea when implemented at the right time with the right means can aid humanity to a profuse extent.
 
 ## Features
-------
+
 * Person Finder
 This section of the platform aims at connecting the disconnected members of a family to find their missing ones. 
 Users looking for missing ones can provide details about the lost person like photos, age, gender etc. Users can also update information on encountering the missings ones for their families to find them. Azure's facial recognition API is used to run a facial scan of the uploaded photos and generate a confidence score of how close the actual person's photo matches with the uploaded photo of the missing person.
@@ -25,14 +25,17 @@ This section connects receivers looking for medication with the donors who posse
 Users can update their status with the geolocation. This data can be used to identify the places to avoid, as well as the places that are relatively safe.
 
 	1. Places to avoid 
-	The areas that are potential zones of danger and life loss are identified based on status updated from the platform users, previously documented data, and other sources.Victims can refer to this information before relocating to a new place to avoid danger.
+	The areas that are potential zones of danger and life loss are identified based on status updated from the platform users, 	  previously documented data, and other sources.Victims can refer to this information before relocating to a new place to avoid danger.
 
 	2. Places that are relatively safe
 	The areas that are relatively safe when compared to other places. People in a particular area, can mark himself safe and rate the safety of his place on a scale of 1-5.
 
+* Volunteers
+Brave souls, rescue forces, data scientists who are looking for data regarding the worst hit spots,areas with people looking for help can refer to this section of the platform. 
+
 
   
-## Our Idea
+
 
 
 
