@@ -14,7 +14,7 @@ Natural disasters are sudden events such as floods, earthquakes, or hurricanes t
 * Person Finder
 
 	This section of the platform aims at connecting the disconnected members of a family with their loved ones. 
-Users need to provide details of the missing ones like photo, age, gender etc for the platform to find them.On the other end ,Users can also update information on encountering the missing ones for their families to find them. Azure's facial recognition API is used to run a facial scan of the uploaded photos and generate a confidence score of how well the actual person's photo matches with the uploaded photo of the missing person.
+Users need to provide details of the missing ones like photo, age, gender etc for the platform to find them. On the other end, users can also update information on encountering the missing ones for their families to find them. Azure's facial recognition API is used to run a facial scan of the uploaded photos and generate a confidence score of how well the actual person's photo matches with the uploaded photo of the missing person.
 
 * Food
 	
