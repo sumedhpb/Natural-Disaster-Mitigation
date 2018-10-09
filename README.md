@@ -13,12 +13,12 @@ Natural disasters are sudden events such as floods, earthquakes, or hurricanes t
 
 * Person Finder
 
-	This section of the platform aims at connecting the disconnected members of a family to find their missing ones. 
-Users looking for missing ones can provide details about the lost person like photo, age, gender etc. Users can also update information on encountering the missing ones for their families to find them. Azure's facial recognition API is used to run a facial scan of the uploaded photos and generate a confidence score of how close the actual person's photo matches with the uploaded photo of the missing person.
+	This section of the platform aims at connecting the disconnected members of a family with their loved ones. 
+Users need to provide details of the missing ones like photo, age, gender etc for the platform to find them.On the other end ,Users can also update information on encountering the missing ones for their families to find them. Azure's facial recognition API is used to run a facial scan of the uploaded photos and generate a confidence score of how well the actual person's photo matches with the uploaded photo of the missing person.
 
 * Food
 	
-	This section of the platform lets people who are in need of food/groceries to give their relevant needs for the same. The idea is to bring together donors and receivers for the available resources the donors offer to provide. The donor when in excess of food can update the information regarding the number of people he can offer food with his location. At the receiver's end, the receiver can look for nearest donors who are offering food.
+	This section of the platform lets people who are in search of food/groceries to request their relevant needs. The idea is to bring together donors and receivers that lets the receivers find nearby donors with available resources. The donor when in excess of food can update the information regarding the number of people he can offer food along with his geolocation. At the receiver's end, the receiver can look for nearest donors who are offering food.
 
 * Meds
 
@@ -26,7 +26,7 @@ Users looking for missing ones can provide details about the lost person like ph
 
 * Status 
 
-	Users can update their status with the geolocation. This data can be used to identify the places to avoid, as well as the places that are relatively safe.
+	Users can update their safety status with their geolocation. This data can be used to identify the places to avoid going, places that are relatively safe and the locations of the casualities that need help.
 
 	1. Places to avoid 
 	The areas that are potential zones of danger and life loss are identified based on status updated from the platform users, 	  previously documented data, and other sources. Victims can refer to this information before relocating to a new place to avoid danger.
