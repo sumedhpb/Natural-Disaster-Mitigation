@@ -31,7 +31,7 @@ Users can update their status with the geolocation. This data can be used to ide
 	The areas that are relatively safe when compared to other places. People in a particular area, can mark himself safe and rate the safety of his place on a scale of 1-5.
 
 * Volunteers
-Brave souls, rescue forces, data scientists who are looking for data regarding the worst hit spots,areas with people looking for help can refer to this section of the platform. 
+Brave souls, rescue forces, data scientists who are looking for data regarding the worst hit spots. Areas with people looking for help can refer to this section of the platform. 
 
 
   
