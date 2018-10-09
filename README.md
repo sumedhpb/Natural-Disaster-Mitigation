@@ -9,7 +9,7 @@ To Build state-of-the-art technology to predict or manage natural disasters bett
 
 
 
-contestants
+Contestants
 ------
 * **Suraj Aralihalli** - [Profile](https://github.com/SurajAralihalli)<br>
 * **Sumedh Pb** - [Profile](https://github.com/sumedhpb)<br>
