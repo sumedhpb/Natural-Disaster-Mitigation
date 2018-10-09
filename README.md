@@ -3,7 +3,7 @@
 
 Good predictions and warnings save lives.<br>
 To Build state-of-the-art technology to predict or manage natural disasters better.<br>
-
+The idea is developed as a part of Microsoft Codefundo 2018.
   
 ## Our Idea
 
