@@ -83,13 +83,13 @@
             <i class="fas fa-prescription-bottle-alt"></i>
             <span>Medication</span></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link " href="#">
+        <li class="nav-item">
+          <a class="nav-link" href="person_locator.html">
             <i class="fas fa-user-friends"></i>
             <span>Person Finder</span></a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="my_status.html">
+        <li class="nav-item active">
+          <a class="nav-link " href="#">
             <i class="fas fa-building"></i>
             <span>My status</span></a>
         </li>
@@ -129,43 +129,45 @@
           <center>
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Person Locator</li>
-          </ol>
-          <br><br>
-          
-            <form action = "#" method="POST" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0 col-lg-8">
-            <div class="input-group">
-               <input type="text" name="name" class="form-control"  placeholder="I am looking for" aria-label="Search" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            <input type="submit" class="btn btn-primary" value="Search">
-           </div>
-          </div>
-          </form>
-        
-        <br><br>
-            <form action = "#" method="POST" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0 col-sm-8">
-            <div class="input-group">
-               <input type="text" name="name" class="form-control"  placeholder="I have information about " aria-label="Search" aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            <input type="submit" class="btn btn-primary" value="Add">
-           </div>
-          </div>
-          </form>
-          <br><br>
-          <a class="btn btn-primary btn-lg btn-block" href="#" style="width:60%;"> Upload Photo + Details <i class="fas fa-user-friends"></i></a>
-            
+            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">My status</li>
+          </ol> 
+          <form class="form-horizontal" action="#" method="post">
+
+              <div class="input-group mb-3 col-sm-8">
+                <div class="input-group-prepend">
+                   <span class="input-group-text btn-sm" id="basic-addon1"> Where are you? </span>
+                </div>
+                    <!-- <input type="text" name="receipt_no" class="form-control"  arial-label="name" size="20" maxlength="14" size="10"> -->
+                    <input type="text" name="receipt_no" class="form-control"  arial-label="receipt_no" maxlength="14" size="30"  id="txtHint">
+                    <div class="input-group-append">
+                        <a class="btn btn-primary btn-sm " href="#" style="width:120%;position:relative;"> <span style="position:relative;top:7%;"> Auto Detect </span> <i class="fas fa-map-marked-alt"></i></a>
+                       </div>
+              </div>
+
+              </form>
+              <br>
+                <div class="input-group mb-3 col-sm-8 dropdown-primary">
+                    <div class="input-group-prepend">
+                       <span class="input-group-text"> How safe is your place? </span>
+                     </div>
+                    <select  name="formof" class="form-control" required>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5</option>
+
+                    </select> 
+                   </div>
+
+                   <ol class="breadcrumb">
+                      <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Avoid Areas </li>
+                    </ol> 
+
+              <img src="red.png" class="img-circle" alt="Cinque Terre">
         </center>
 
         
-
-        <!-- Sticky Footer
-        <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright © Your Website 2018</span>
-            </div>
-          </div>
-        </footer> -->
 
       </div>
       <!--container-fuild -->
