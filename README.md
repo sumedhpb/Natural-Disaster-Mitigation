@@ -1,8 +1,9 @@
+
 # Natural-Disaster-Mitigation
 ## A platform to connect, help, and provide relief to victims of natural disasters
 
 Good predictions and warnings save lives.<br>
-To Build state-of-the-art technology to predict or manage natural disasters better.<br>
+To Build state-of-the-https://github.com/sumedhpb/Natural-Disaster-Mitigationart technology to predict or manage natural disasters better.<br>
 The idea is developed as a part of Microsoft Codefundo 2018.
 
 ## Inspiration
@@ -24,7 +25,7 @@ Users need to provide details of the missing ones like photo, age, gender etc fo
 
 	This section connects receivers looking for medication with the donors who possess the required meds. Donors can update the availability and quantity of the medicines he offers with his geolocation. Receiver can connect to the nearest donor with the required medication.
 
-* Status 
+* My Status 
 
 	Users can update their safety status with their geolocation. This data can be used to identify the places to avoid going, places that are relatively safe and the locations of the casualities that need help.
 
@@ -34,7 +35,12 @@ Users need to provide details of the missing ones like photo, age, gender etc fo
 	2. Places that are relatively safe
 	The areas that are relatively safe when compared to other places are listed here. A person in a particular area, can mark himself safe and rate the safety of his place on a scale of 1-5.
 
-* Volunteers
+
+* I need help
+	
+	This section is to connect the worst hit victims to the rescue forces. Geolocation of the victim is extracted so that immediate action can be carried out for their rescue.
+	
+* I can help
 
 	Brave souls, rescue forces, data scientists who are looking for data regarding the worst hit spots can refer to this section of the platform. 
 
