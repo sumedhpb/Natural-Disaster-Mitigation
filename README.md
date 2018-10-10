@@ -8,7 +8,7 @@ The idea is developed as a part of Microsoft Codefundo 2018.
 
 ## Inspiration
 
-Natural disasters are sudden events such as floods, earthquakes, or hurricanes that cause humongous damage to both human lives and earth's resources. Though they can't be prevented, with meticulous planning and sagacious implementation they can be mitigated. Nutural Disasters are the time of chaos and panic where a small idea when implemented at the right time with the right means can aid humanity to a profuse extent.
+Natural disasters are sudden events such as floods, earthquakes, or hurricanes that cause humongous damage to both human lives and earth's resources. Though they can't be prevented, with meticulous planning and sagacious implementation they can be mitigated. Natural Disasters are the time of chaos and panic where a small idea when implemented at the right time with the right means can aid humanity to a profuse extent.
 
 ## Platform
 Here's how the Front-end of our platform looks like! https://sumedhpb.github.io/Natural-Disaster-Mitigation/
