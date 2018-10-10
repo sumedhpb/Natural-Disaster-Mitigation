@@ -1,8 +1,7 @@
 
 # Natural-Disaster-Mitigation
 ## A platform to connect, help, and provide relief to victims of natural disasters
-
-The idea is developed as a part of Microsoft Codefundo 2018.
+Developed as a part of Microsoft Codefundo 2018.
 
 ## Inspiration
 
