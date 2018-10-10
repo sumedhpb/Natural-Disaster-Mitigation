@@ -67,14 +67,14 @@
 
       <!-- Sidebar -->
       <ul class="sidebar navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">
+        <li class="nav-item ">
+          <a class="nav-link " href="index.html">
            <i class="fas fa-school"></i>
             <span>Home</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="food.html">
+          <a class="nav-link" href="#">
             <i class="fas fa-utensils"></i>
             <span>Food </span></a>
         </li>
@@ -89,14 +89,19 @@
             <span>Person Finder</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="place_status.html">
+          <a class="nav-link" href="my_status.html">
             <i class="fas fa-building"></i>
-            <span>Place status</span></a>
+            <span>My status</span></a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="need_help.html">
+            <i class="fas fa-fw fa-child"></i>
+            <span>I need help! </span></a>
+        </li>
+        <li class="nav-item  active ">
           <a class="nav-link" href="#">
             <i class="fas fa-fw fa-child"></i>
-            <span>Volunteer</span></a>
+            <span>I can help! </span></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">
@@ -117,34 +122,101 @@
         
       </ul>
 
-      <div id="content-wrapper" style="background-image:url('hope.png'); background-size:cover;background-repeat: no-repeat center fixed;">
+      <div id="content-wrapper">
+        <center>
+        <div class="container-fluid">
+            
+          <!-- Breadcrumbs-->
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item active" style="font-size: 30px;color:black;"> I can help! </li>
+          </ol>
+          <br><br>
 
-        <!-- <ol class="breadcrumb">
-            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Money</li>
-          </ol> -->
-          
-        <div class="breadcrumb" style="background-color:rgba(73, 121, 139, 0.692);position:relative;top:7%;height:2in;">
-          <div class="jumbotron" style="background:none;">
-    <h1 style="position:relative;top:-25%;font-size: 70px;color:#d1cece;"> Hope </h1>
-    <p style="position:relative;top:-20%;font-size: 20px;color:#d1cece;">A platform to connect, help, and provide relief to victims of natural disasters</p>
-    <!-- <blockquote class="blockquote-reverse" style="color:#bfbfbf;">
-    <p>"I do not believe in a God or Religion<br> which cannot bring a morsel of food<br> to the  orphans' mouth"<footer style="position:absolute;left:30%;">-Swami Vivekananda</footer></p></blockquote> -->
+          <form class="form-horizontal" action="transaction.php" method="post">
 
-        </div>
-        </div>
-      
+            <div class="input-group mb-3 col-sm-8">
+              <div class="input-group-prepend">
+                 <span class="input-group-text btn-sm" id="basic-addon1"> Details </span>
+              </div>
+                  <!-- <input type="text" name="receipt_no" class="form-control"  arial-label="name" size="20" maxlength="14" size="10"> -->
+                  <input type="text" name="receipt_no" class="form-control"  arial-label="receipt_no" placeholder="Enter your details here "maxlength="14" size="30"  id="txtHint">
+                  <!-- <div class="input-group-append">
+                      <a class="btn btn-primary btn-sm " href="#" style="width:120%;position:relative;"> <span style="position:relative;top:7%;"> Auto Detect </span> <i class="fas fa-map-marked-alt"></i></a>
+                     </div> -->
+            </div>
+            <a class="btn btn-primary btn-lg btn-block col-sm-8" href="#" style="width:60%;"> I Can help! <i class="fas fa-user-friends"></i></a>
 
-        <!-- Sticky Footer -->
-        <footer class="sticky-footer" style="height:10%;background-color: #303030;color: grey;">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Designed & Developed by Suraj , Sumedh & Sumanth </span>
+            </form>
+            <!-- <form action="display_all_child_details.php" method="POST">
+            <input class="searchTerm" type="text" name="name">
+            <input class = "searchButton" type="submit" value="Search">
+            </form> -->
+<!-- 
+            <form action = "display_all_child_details.php" method="POST" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
+            <div class="input-group">
+               <input type="text" name="name" size="40" class="form-control"  placeholder="Search for child..." aria-label="Search"aria-describedby="basic-addon2">
+            <div class="input-group-append">
+            <input type="submit" class="btn btn-primary" value="Search">
+           </div>
+          </div>
+          </form> -->
+        </center>
+
+          <!-- Area Chart Example-->
+          <!-- <div class="card mb-3">
+            <div class="card-header">
+              <i class="fas fa-chart-area"></i>
+              Area Chart Example
+            </div>
+            <div class="card-body">
+              <canvas id="myAreaChart" width="100%" height="30"></canvas>
+            </div>
+            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          </div> -->
+
+          <!-- <div class="row">
+            <div class="col-lg-8">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-bar"></i>
+                  Bar Chart Example</div>
+                <div class="card-body">
+                  <canvas id="myBarChart" width="100%" height="50"></canvas>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card mb-3">
+                <div class="card-header">
+                  <i class="fas fa-chart-pie"></i>
+                  Pie Chart Example</div>
+                <div class="card-body">
+                  <canvas id="myPieChart" width="100%" height="100"></canvas>
+                </div>
+                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+              </div>
             </div>
           </div>
-        </footer>
 
-        </div>
-      <!--container-fuild -->
+          <p class="small text-center text-muted my-5">
+            <em>More chart examples coming soon...</em>
+          </p>
+
+        </div> -->
+        <!-- /.container-fluid -->
+
+        <!-- Sticky Footer -->
+        <!-- <footer class="sticky-footer">
+          <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+              <span>Copyright © Your Website 2018</span>
+            </div>
+          </div>
+        </footer> -->
+
+      </div>
+      <!-- /.content-wrapper -->
 
     </div>
     <!-- /#wrapper -->
@@ -182,15 +254,14 @@
 
     <!-- Page level plugin JavaScript-->
     <script src="vendor/chart.js/Chart.min.js"></script>
-    <script src="vendor/datatables/jquery.dataTables.js"></script>
-    <script src="vendor/datatables/dataTables.bootstrap4.js"></script>
 
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin.min.js"></script>
 
     <!-- Demo scripts for this page-->
-    <script src="js/demo/datatables-demo.js"></script>
     <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-bar-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
 
   </body>
 
