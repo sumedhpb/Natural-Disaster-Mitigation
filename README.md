@@ -50,13 +50,13 @@ Users need to provide details of the missing ones like photo, age, gender etc fo
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/my_status.png)
 
-* I need help
+* I need help!
 	
 	This section is to connect the worst hit victims to the rescue forces. Geolocation of the victim is extracted so that immediate action can be carried out for their rescue.
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/need_help.png)
 	
-* I can help
+* I can help!
 
 	Brave souls, rescue forces, data scientists who are looking for data regarding the worst hit spots can refer to this section of the platform. 
 
