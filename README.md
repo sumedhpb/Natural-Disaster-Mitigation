@@ -24,7 +24,7 @@ Users need to provide details of the missing ones like photo, age, gender etc fo
 	
 	This section of the platform lets people who are in search of food/groceries to request their relevant needs. The idea is to bring together donors and receivers that lets the receivers find nearby donors with available resources. The donor when in excess of food can update the information regarding the number of people he can offer food along with his geolocation. At the receiver's end, the receiver can look for nearest donors who are offering food.
 
-* Meds
+* Medication
 
 	This section connects receivers looking for medication with the donors who possess the required meds. Donors can update the availability and quantity of the medicines he offers with his geolocation. Receiver can connect to the nearest donor with the required medication.
 
@@ -39,11 +39,11 @@ Users need to provide details of the missing ones like photo, age, gender etc fo
 	The areas that are relatively safe when compared to other places are listed here. A person in a particular area, can mark himself safe and rate the safety of his place on a scale of 1-5.
 
 
-* I need help
+* I need help!
 	
 	This section is to connect the worst hit victims to the rescue forces. Geolocation of the victim is extracted so that immediate action can be carried out for their rescue.
 	
-* I can help
+* I can help!
 
 	Brave souls, rescue forces, data scientists who are looking for data regarding the worst hit spots can refer to this section of the platform. 
 
