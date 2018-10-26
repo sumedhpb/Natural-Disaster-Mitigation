@@ -147,7 +147,7 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Global status </li>
+            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Avoid Areas </li>
           </ol>
 		  <?php
 $host = "psql-hope.postgres.database.azure.com";
