@@ -1,12 +1,11 @@
 <?php
-$servername="localhost";
-$username="postgres";
-$password="sumSVR@1";
-$databasename="hope";
-$port="5432";
+$host = "psql-hope.postgres.database.azure.com";
+$database = "hope";
+$user = "sumedh@psql-hope";
+$password = "sumSVR@1";
 
-
-$conn=pg_connect("host=$servername port=$port dbname=$databasename user=$username password=$password");
+// Initialize connection object.
+$conn= pg_connect("host=$host dbname=$database user=$user password=$password");
 if(!$conn)
 	echo "Connection failed to the database";
 
