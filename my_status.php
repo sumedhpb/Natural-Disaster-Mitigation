@@ -297,7 +297,7 @@ if(pg_query($conn, $query))
 
 
 
-      //image = "https://github.com/sumedhpb/Natural-Disaster-Mitigation/blob/master/screenshots/danger2.png"
+      image = "Natural-Disaster-Mitigation/screenshots/danger1.png"
 
          
 
@@ -305,7 +305,7 @@ if(pg_query($conn, $query))
          marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][0], locations[i][1]),
         map: map,
-        //icon: image
+        icon: image
       });
       }
       }
