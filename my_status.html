@@ -126,31 +126,58 @@
 
         <div class="container-fluid">
           
-          <center>
+          
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item active" style="font-size: 30px;color:black;">My status</li>
           </ol> 
-          <form class="form-horizontal" action="#" method="post">
+          <form class="form-horizontal" action="my_status.php" method="post">
 
               <div class="input-group mb-3 col-sm-8">
                 <div class="input-group-prepend">
-                   <span class="input-group-text btn-sm" id="basic-addon1"> Where are you? </span>
+                   <span class="input-group-text" id="basic-addon1">Latitude: </span>
                 </div>
-                    <!-- <input type="text" name="receipt_no" class="form-control"  arial-label="name" size="20" maxlength="14" size="10"> -->
-                    <input type="text" name="receipt_no" class="form-control"  arial-label="receipt_no" maxlength="14" size="30"  id="txtHint">
-                    <div class="input-group-append">
-                        <a class="btn btn-primary btn-sm " href="#" style="width:120%;position:relative;"> <span style="position:relative;top:7%;"> Auto Detect </span> <i class="fas fa-map-marked-alt"></i></a>
-                       </div>
+                    <!-- <input type="text" class="form-control bfh-phone" name="phno" placeholder="Number" size="20" maxlength="12" aria-label="phno" aria-describedby="basic-addon1"> -->
+                    <input type="number" step="any" class="form-control" name="lat" id="lat" placeholder="Latitude"  aria-label="lat" aria-describedby="basic-addon1" required >
               </div>
 
-              </form>
-              <br>
-                <div class="input-group mb-3 col-sm-8 dropdown-primary">
-                    <div class="input-group-prepend">
-                       <span class="input-group-text"> How safe is your place? </span>
-                     </div>
-                    <select  name="formof" class="form-control" required>
+              <div class="input-group mb-3 col-sm-8">
+                <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1">Longitude: </span>
+                </div>
+                    <!-- <input type="text" class="form-control bfh-phone" name="phno" placeholder="Number" size="20" maxlength="12" aria-label="phno" aria-describedby="basic-addon1"> -->
+                    <input type="number" step="any" class="form-control" name="long" id="long" placeholder="Longitude"  aria-label="long" aria-describedby="basic-addon1" required >
+              </div>
+
+              <div class="input-group-append">
+                <a  class="btn btn-primary btn-sm " onclick="getLocation()" style="width:15%;position:relative;left:2%"> <span style="position:relative;top:7%;"> Auto Detect </span> <i class="fas fa-map-marked-alt"></i></a>
+               </div>
+         
+                              <script>
+                        var x = document.getElementById("lat");
+                        var y = document.getElementById("long");
+         
+                        function getLocation() {
+                            if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition);
+                            } else { 
+                                x.innerHTML = "Geolocation is not supported by this browser.";
+                            }
+                        }
+         
+                        function showPosition(position) {
+                            x.value = position.coords.latitude;
+                            y.value= position.coords.longitude;
+                        }
+                        </script>   
+          
+          
+            <br/>
+          <div class="input-group mb-3 col-sm-8">
+              <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">How safe is your place? </span>
+               </div>
+                    <select  name="rating" class="form-control" required>
                       <option value="1">1</option>
                       <option value="2">2</option>
                       <option value="3">3</option>
@@ -159,13 +186,21 @@
 
                     </select> 
                    </div>
+                     
+              <div class="form-group">        
+                <div class="col-sm-offset-2 col-sm-10">
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </div>
+              </div>
 
+            </form>
+            <br/><br/>
                    <ol class="breadcrumb">
                       <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Avoid Areas </li>
                     </ol> 
 
               <img src="red.png" class="img-circle" alt="Cinque Terre">
-        </center>
+        
 
         
 
