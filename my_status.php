@@ -297,7 +297,7 @@ if(pg_query($conn, $query))
 
 
 
-      image = "Natural-Disaster-Mitigation/screenshots/danger1.png"
+     	var image = "https://github.com/sumedhpb/Natural-Disaster-Mitigation/blob/master/screenshots/danger1.png"
 
          
 
