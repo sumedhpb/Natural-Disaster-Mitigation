@@ -107,7 +107,7 @@
             <i class="fas fa-user-friends"></i>
             <span>Person Finder</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="my_status.html">
             <i class="fas fa-building"></i>
             <span>My status</span></a>
@@ -117,7 +117,7 @@
             <i class="fas fa-fw fa-child"></i>
             <span>I need help! </span></a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="can_help.html">
             <i class="fas fa-fw fa-child"></i>
             <span>I can help! </span></a>
