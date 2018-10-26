@@ -22,6 +22,38 @@
 
     <!-- Custom styles for this template-->
     <link href="css/sb-admin.css" rel="stylesheet">
+    <script>
+      // function showHint() {
+      //         var xmlhttp = new XMLHttpRequest();
+      //         xmlhttp.onreadystatechange = function() {
+      //             if (this.readyState == 4 && this.status == 200) {
+      //               //console.log("hi"+this.responseText);
+      //                 document.getElementById("txtHint").value = this.responseText;
+      //             }
+      //         };
+      //         xmlhttp.open("GET", "transac_ajax.php?q=" + "", true);
+      //         xmlhttp.send();
+      // }
+      
+      function fillIn(){
+        var xmlhttp = new XMLHttpRequest();
+        var string=document.getElementById("phno");
+              xmlhttp.onreadystatechange = function() {
+                  if (this.readyState == 4 && this.status == 200) {
+                    //console.log("hi"+this.responseText);
+                    var response=this.responseText;
+                    console.log(this.responseText);
+                      var arr=response.split(";");
+                      document.getElementById('name').value=arr[0];
+                      document.getElementById('email_id').value=arr[1];
+                      document.getElementById('addr').value=arr[2];
+                      console.log(arr[0]);
+                  }
+              };
+              xmlhttp.open("GET", "fillIn_ajax.php?a=" + string, true);
+              xmlhttp.send();
+      }
+      </script>
 
   </head>
 
@@ -47,19 +79,6 @@
         </div>
       </form>
 
-      <!-- Navbar
-      <ul class="navbar-nav ml-auto ml-md-0">
-        <li class="nav-item dropdown no-arrow">
-          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-user-circle fa-fw"></i>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-            <a class="dropdown-item" href="#">Settings</a>
-            <a class="dropdown-item" href="#">Activity Log</a>
-            <div class="dropdown-divider"></div>
-          </div>
-        </li>
-      </ul> -->
 
     </nav>  <!-- Top Nav bar ends here -->
 
@@ -73,8 +92,8 @@
             <span>Home</span>
           </a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link " href="#">
+        <li class="nav-item ">
+          <a class="nav-link " href="food.html">
             <i class="fas fa-utensils"></i>
             <span>Food </span></a>
         </li>
@@ -98,7 +117,7 @@
             <i class="fas fa-fw fa-child"></i>
             <span>I need help! </span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="can_help.html">
             <i class="fas fa-fw fa-child"></i>
             <span>I can help! </span></a>
@@ -128,81 +147,65 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active" style="font-size: 30px;color:black;"> Food </li>
+            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">I can help! </li>
           </ol>
+           
+		  <?php
+$servername="localhost";
+$username="postgres";
+$password="sumSVR@1";
+$databasename="hope";
+$port="5432";
 
-          <br><br>
-            <center><a class="btn btn-primary btn-lg btn-block" href="receive_food.html" style="width:60%;"> Request Food <i class="fas fa-utensils"></i></a>
-            <br>
-            <a class="btn btn-primary btn-lg btn-block" href="offer_food.html" style="width:60%;"> Offer Food <i class="fas fa-fw fa-book"></i></a>
-            <br><br>
-            <!-- <form action="display_all_child_details.php" method="POST">
-            <input class="searchTerm" type="text" name="name">
-            <input class = "searchButton" type="submit" value="Search">
-            </form> -->
-<!-- 
-            <form action = "display_all_child_details.php" method="POST" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-            <div class="input-group">
-               <input type="text" name="name" size="40" class="form-control"  placeholder="Search for child..." aria-label="Search"aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            <input type="submit" class="btn btn-primary" value="Search">
-           </div>
-          </div>
-          </form> -->
+
+$conn=pg_connect("host=$servername port=$port dbname=$databasename user=$username password=$password");
+if(!$conn)
+	echo "Connection failed to the database";
+
+$ph_no=$_POST["ph_no"];
+$date=$_POST["date"];
+$address=$_POST["address"];
+$lat=$_POST["lat"];
+$long=$_POST["long"];
+
+$query="Insert into can_help values('$ph_no','$date','$address','$lat','$long')";
+
+
+?>
+<script>
+  var locations=[];
+</script>
+<?php
+if(pg_query($conn, $query))
+{
+	$query2=pg_query($conn,"Select * from need_help");
+	while($row= pg_fetch_row($query2))
+	{ 
+		
+	?>
+    <script>
+     locations.push([<?php echo $row[0];?>,<?php echo $row[3];?>,<?php echo $row[4];?>]);
+      </script>
+	<?php
+	}
+}
+?>
+
+</table>
+  <br/><br/>
+  <div style="width:900px;height:400px;position:relative;left:5%;" id="map"></div>
+
+                  <!-- <div class="container col-sm-offset-2 col-sm-8">
+              <p> Choose the type of transaction: </p>
+                <label class="radio-inline">
+                  <input type="radio" name="typeof" value="money">Money -->
+                <!-- <label class="radio-inline">
+                  <input type="radio"  name="typeof" value="stock">Stock
+                </label>
+                  </div> -->
+                   
+            
         </center>
-
-          <!-- Area Chart Example-->
-          <!-- <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Area Chart Example
-            </div>
-            <div class="card-body">
-              <canvas id="myAreaChart" width="100%" height="30"></canvas>
-            </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-          </div> -->
-
-          <!-- <div class="row">
-            <div class="col-lg-8">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-bar"></i>
-                  Bar Chart Example</div>
-                <div class="card-body">
-                  <canvas id="myBarChart" width="100%" height="50"></canvas>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-              </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-pie"></i>
-                  Pie Chart Example</div>
-                <div class="card-body">
-                  <canvas id="myPieChart" width="100%" height="100"></canvas>
-                </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-              </div>
-            </div>
-          </div>
-
-          <p class="small text-center text-muted my-5">
-            <em>More chart examples coming soon...</em>
-          </p>
-
-        </div> -->
-        <!-- /.container-fluid -->
-
-        <!-- Sticky Footer -->
-        <!-- <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright © Your Website 2018</span>
-            </div>
-          </div>
-        </footer> -->
 
       </div>
       <!-- /.content-wrapper -->
@@ -234,6 +237,9 @@
       </div>
     </div>
 
+
+    
+
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -251,7 +257,104 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+    
+    
+
+
+
+
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALw2fPTrMLpQXUsUtNEMhNHN4a7Z9Ks18&callback=initMap">
+    </script>
+
+
+
+    <script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat:12.945529899999999, lng:77.5694414},
+          zoom: 6
+        });
+
+
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+
+
+         
+
+      for (i = 0; i < locations.length; i++) {  
+         marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map
+      });
+      }
+      }
+
+
+
+  // var locations = [
+  //     [15.2689,76.3909]
+  //   ];
+
+
+  //     var marker = new google.maps.Marker({
+  //   position: locations[0],
+  //   map: map,
+  //   title: 'Hello World!'
+  // });
+
+     
+
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+
+
+
+
+    </script>
+    
+
+
+    
 
   </body>
 
 </html>
+
+
+
+
+

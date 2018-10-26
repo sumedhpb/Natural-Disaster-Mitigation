@@ -74,7 +74,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="food.html">
             <i class="fas fa-utensils"></i>
             <span>Food </span></a>
         </li>
@@ -123,98 +123,89 @@
       </ul>
 
       <div id="content-wrapper">
-        <center>
+
         <div class="container-fluid">
             
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
             <li class="breadcrumb-item active" style="font-size: 30px;color:black;"> I need help! </li>
           </ol>
-          <br><br>
+          
+          <form class="form-horizontal" action="need_help.php" method="post">
 
-          <form class="form-horizontal" action="transaction.php" method="post">
-
-            <div class="input-group mb-3 col-sm-8">
-              <div class="input-group-prepend">
-                 <span class="input-group-text btn-sm" id="basic-addon1"> I am Here </span>
-              </div>
-                  <!-- <input type="text" name="receipt_no" class="form-control"  arial-label="name" size="20" maxlength="14" size="10"> -->
-                  <input type="text" name="receipt_no" class="form-control"  arial-label="receipt_no" maxlength="14" size="30"  id="txtHint">
-                  <div class="input-group-append">
-                      <a class="btn btn-primary btn-sm " href="#" style="width:120%;position:relative;"> <span style="position:relative;top:7%;"> Auto Detect </span> <i class="fas fa-map-marked-alt"></i></a>
-                     </div>
-            </div>
-            <a class="btn btn-primary btn-lg btn-block col-sm-8" href="#" style="width:60%;"> I need help! <i class="fas fa-user-friends"></i></a>
-
-            </form>
-            <!-- <form action="display_all_child_details.php" method="POST">
-            <input class="searchTerm" type="text" name="name">
-            <input class = "searchButton" type="submit" value="Search">
-            </form> -->
-<!-- 
-            <form action = "display_all_child_details.php" method="POST" class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-            <div class="input-group">
-               <input type="text" name="name" size="40" class="form-control"  placeholder="Search for child..." aria-label="Search"aria-describedby="basic-addon2">
-            <div class="input-group-append">
-            <input type="submit" class="btn btn-primary" value="Search">
-           </div>
-          </div>
-          </form> -->
-        </center>
-
-          <!-- Area Chart Example-->
-          <!-- <div class="card mb-3">
-            <div class="card-header">
-              <i class="fas fa-chart-area"></i>
-              Area Chart Example
-            </div>
-            <div class="card-body">
-              <canvas id="myAreaChart" width="100%" height="30"></canvas>
-            </div>
-            <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
-          </div> -->
-
-          <!-- <div class="row">
-            <div class="col-lg-8">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-bar"></i>
-                  Bar Chart Example</div>
-                <div class="card-body">
-                  <canvas id="myBarChart" width="100%" height="50"></canvas>
+            
+              <div class="input-group mb-3 col-sm-8">
+                <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1">Phone number: </span>
                 </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+                    <!-- <input type="text" class="form-control bfh-phone" name="phno" placeholder="Number" size="20" maxlength="12" aria-label="phno" aria-describedby="basic-addon1"> -->
+                    <input type="text" class="form-control bfh-phone" name="ph_no" id="phno" placeholder="Number" pattern="[0-9]{10}" onblur="fillIn()" aria-label="phno" aria-describedby="basic-addon1" required >
               </div>
-            </div>
-            <div class="col-lg-4">
-              <div class="card mb-3">
-                <div class="card-header">
-                  <i class="fas fa-chart-pie"></i>
-                  Pie Chart Example</div>
-                <div class="card-body">
-                  <canvas id="myPieChart" width="100%" height="100"></canvas>
+              
+              <div class="input-group mb-3 col-sm-8">
+                <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1">Date: </span>
                 </div>
-                <div class="card-footer small text-muted">Updated yesterday at 11:59 PM</div>
+          <!--           <input type="date" class="form-control" name="date"  aria-label="date" aria-describedby="basic-addon1">
+           -->          <input type="text" class="form-control" id="DATE" name="date" size="10" required>
+              </div>
+
+               <div class="input-group mb-3 col-sm-8">
+                <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1">Address: </span>
+                </div>
+          <!--           <input type="date" class="form-control" name="date"  aria-label="date" aria-describedby="basic-addon1">
+           -->          <input type="text" class="form-control" name="address" placeholder="Address" maxlength="1000" id="addr" >
+              </div>
+
+                  
+               <div class="input-group mb-3 col-sm-8">
+                <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1">Latitude: </span>
+                </div>
+                    <!-- <input type="text" class="form-control bfh-phone" name="phno" placeholder="Number" size="20" maxlength="12" aria-label="phno" aria-describedby="basic-addon1"> -->
+                    <input type="number" step="any" class="form-control" name="lat" id="lat" placeholder="Latitude"  aria-label="lat" aria-describedby="basic-addon1" required >
+              </div>
+
+              <div class="input-group mb-3 col-sm-8">
+                <div class="input-group-prepend">
+                   <span class="input-group-text" id="basic-addon1">Longitude: </span>
+                </div>
+                    <!-- <input type="text" class="form-control bfh-phone" name="phno" placeholder="Number" size="20" maxlength="12" aria-label="phno" aria-describedby="basic-addon1"> -->
+                    <input type="number" step="any" class="form-control" name="long" id="long" placeholder="Longitude"  aria-label="long" aria-describedby="basic-addon1" required >
+              </div>
+
+              <div class="input-group-append">
+                <a  class="btn btn-primary btn-sm " onclick="getLocation()" style="width:15%;position:relative;left:1.5%"> <span style="position:relative;top:7%;"> Auto Detect </span> <i class="fas fa-map-marked-alt"></i></a>
+               </div>
+         
+                              <script>
+                        var x = document.getElementById("lat");
+                        var y = document.getElementById("long");
+         
+                        function getLocation() {
+                            if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition);
+                            } else { 
+                                x.innerHTML = "Geolocation is not supported by this browser.";
+                            }
+                        }
+         
+                        function showPosition(position) {
+                            x.value = position.coords.latitude;
+                            y.value= position.coords.longitude;
+                        }
+                        </script>   
+          
+              <br/>
+               
+          <div class="form-group">        
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default">Submit</button>
               </div>
             </div>
-          </div>
 
-          <p class="small text-center text-muted my-5">
-            <em>More chart examples coming soon...</em>
-          </p>
-
-        </div> -->
-        <!-- /.container-fluid -->
-
-        <!-- Sticky Footer -->
-        <!-- <footer class="sticky-footer">
-          <div class="container my-auto">
-            <div class="copyright text-center my-auto">
-              <span>Copyright © Your Website 2018</span>
-            </div>
-          </div>
-        </footer> -->
-
+          </form>
       </div>
       <!-- /.content-wrapper -->
 
@@ -262,6 +253,25 @@
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
+
+    <script>
+
+        var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+    
+      var yyyy = today.getFullYear();
+      if(dd<10){
+          dd='0'+dd;
+      } 
+      if(mm<10){
+          mm='0'+mm;
+      } 
+      var today = mm+'/'+dd+'/'+yyyy;
+      document.getElementById("DATE").value = today;
+      
+     </script>
+
 
   </body>
 

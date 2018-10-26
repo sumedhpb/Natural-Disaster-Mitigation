@@ -22,12 +22,12 @@
         or die("Encountered an error when executing given sql statement: ". pg_last_error(). "<br/>");
     print "Finished creating table.<br/>";
 
-    // // Insert some data into table.
-    // $name = '\'banana\'';
-    // $quantity = 150;
-    // $query = "INSERT INTO inventory (name, quantity) VALUES ($1, $2);";
-    // pg_query($connection, $query) 
-    //     or die("Encountered an error when executing given sql statement: ". pg_last_error(). "<br/>");
+    // Insert some data into table.
+    $name = '\'banana\'';
+    $quantity = 150;
+    $query = "INSERT INTO inventory (name, quantity) VALUES ($1, $2);";
+    pg_query($connection, $query) 
+        or die("Encountered an error when executing given sql statement: ". pg_last_error(). "<br/>");
 
     // $name = '\'orange\'';
     // $quantity = 154;
