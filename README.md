@@ -10,6 +10,9 @@ Natural disasters are sudden events such as floods, earthquakes, or hurricanes t
 ## Platform
 Here's how the Front-end of our platform looks like! https://sumedhpb.github.io/Natural-Disaster-Mitigation/
 
+## Platform
+Here's how the Front-end of our platform looks like! https://sumedhpb.github.io/Natural-Disaster-Mitigation/
+
 ## Features
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/home.png)
