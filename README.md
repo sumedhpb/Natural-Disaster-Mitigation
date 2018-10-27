@@ -3,15 +3,13 @@
 ## A platform to connect, help, and provide relief to victims of natural disasters
 Developed as a part of Microsoft Codefundo 2018.
 
+
 ## Inspiration
 
 Natural disasters are sudden events such as floods, earthquakes, or hurricanes that cause humongous damage to both human lives and earth's resource. With meticulous planning and sagacious implementation these can be mitigated. A small idea when implemented at the right time with the right means can aid humanity to a profuse extent.
 
 ## Platform
-Here's how the Front-end of our platform looks like! https://sumedhpb.github.io/Natural-Disaster-Mitigation/
-
-## Platform
-Here's how the Front-end of our platform looks like! https://sumedhpb.github.io/Natural-Disaster-Mitigation/
+Here's our platform! https://hope-natural-disaster-mitigation.azurewebsites.net/
 
 ## Features
 
