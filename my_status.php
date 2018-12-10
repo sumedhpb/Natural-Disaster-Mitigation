@@ -107,7 +107,7 @@
             <i class="fas fa-user-friends"></i>
             <span>Person Finder</span></a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link" href="my_status.html">
             <i class="fas fa-building"></i>
             <span>My status</span></a>
@@ -117,7 +117,7 @@
             <i class="fas fa-fw fa-child"></i>
             <span>I need help! </span></a>
         </li>
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="can_help.html">
             <i class="fas fa-fw fa-child"></i>
             <span>I can help! </span></a>
@@ -147,7 +147,7 @@
 
           <!-- Breadcrumbs-->
           <ol class="breadcrumb">
-            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Global status </li>
+            <li class="breadcrumb-item active" style="font-size: 30px;color:black;">Avoid Areas </li>
           </ol>
 		  <?php
 $host = "psql-hope.postgres.database.azure.com";
@@ -297,7 +297,7 @@ if(pg_query($conn, $query))
 
 
 
-      // image = "https://en.wikipedia.org/wiki/Hazard_symbol#/media/File:GHS-pictogram-skull.svg"
+     	//var image = "https://github.com/sumedhpb/Natural-Disaster-Mitigation/blob/master/screenshots/danger1.png"
 
          
 
@@ -305,7 +305,7 @@ if(pg_query($conn, $query))
          marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][0], locations[i][1]),
         map: map,
-        // icon: image
+       // icon: image
       });
       }
       }
