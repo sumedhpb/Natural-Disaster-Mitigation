@@ -11,6 +11,14 @@ Natural disasters are sudden events such as floods, earthquakes, or hurricanes t
 ## Platform
 Here's our platform! https://hope-natural-disaster-mitigation.azurewebsites.net/
 
+[![Microsoft Azure](https://img.shields.io/badge/Microsoft-Azure-blue.svg)](https://azure.microsoft.com/en-in/)
+[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-%2010-brightgreen.svg)](https://www.postgresql.org/)
+[![php](https://img.shields.io/badge/php-7.0-red.svg)](http://php.net/downloads.php)
+[![javasscript](https://img.shields.io/badge/javascript-1.8-orange.svg)](https://www.javascript.com/)
+[![Bootstrap](https://img.shields.io/badge/bootstrap-3-yellow.svg)](https://getbootstrap.com/)
+[![HTML](https://img.shields.io/badge/html-5-lightgrey.svg)](#)
+
+
 ## Features
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/home.png)
