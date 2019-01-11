@@ -24,26 +24,26 @@ Here's our platform! https://hope-natural-disaster-mitigation.azurewebsites.net/
 
 
 
-* Food
+* **Food**
 	
 	This section of the platform lets people who are in search of food/groceries to request their relevant needs. The idea is to bring together donors and receivers that lets the receivers find nearby donors with available resources. The donor when in excess of food can update the information regarding the number of people he can offer food along with his geolocation. At the receiver's end, the receiver can look for nearest donors who are offering food.
 	
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/food.png)
 
-* Medicine
+* **Medicine**
 
 	This section connects receivers looking for medication with the donors who possess the required meds. Donors can update the availability and quantity of the medicines he offers with his geolocation. Receiver can connect to the nearest donor with the required medication.
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/medicine.png)
 
-* Person Locator
+* **Person Locator**
 
 	This section of the platform aims at connecting the disconnected members of a family with their loved ones. 
 Users need to provide details of the missing ones like photo, age, gender etc for the platform to find them. On the other end, users can also update information on encountering the missing ones for their families to find them. Azure's facial recognition API is used to run a facial scan of the uploaded photos and generate a confidence score of how well the actual person's photo matches with the uploaded photo of the missing person.
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/Person_Locator.png)
 
-* My Status 
+* **My Status**
 
 	Users can update their safety status with their geolocation. This data can be used to identify the places to avoid going, places that are relatively safe and the locations of the casualities that need help.
 
@@ -55,13 +55,13 @@ Users need to provide details of the missing ones like photo, age, gender etc fo
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/my_status.png)
 
-* I need help!
+* **I need help!**
 	
 	This section is to connect the worst hit victims to the rescue forces. Geolocation of the victim is extracted so that immediate action can be carried out for their rescue.
 
 ![](https://github.com/SurajAralihalli/Natural-Disaster-Mitigation/blob/master/screenshots/need_help.png)
 	
-* I can help!
+* **I can help!**
 
 	Brave souls, rescue forces, data scientists who are looking for data regarding the worst hit spots can refer to this section of the platform. 
 
