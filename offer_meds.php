@@ -1,8 +1,8 @@
 <?php
 $host = "psql-hope.postgres.database.azure.com";
 $database = "hope";
-$user = "sumedh@psql-hope";
-$password = "sumSVR@1";
+$user = "usr@psql-hope";
+$password = "pwd";
 
 // Initialize connection object.
 $conn= pg_connect("host=$host dbname=$database user=$user password=$password");

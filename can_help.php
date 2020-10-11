@@ -34,7 +34,7 @@
       //         xmlhttp.open("GET", "transac_ajax.php?q=" + "", true);
       //         xmlhttp.send();
       // }
-      
+
       function fillIn(){
         var xmlhttp = new XMLHttpRequest();
         var string=document.getElementById("phno");
@@ -138,7 +138,7 @@
             <a class="dropdown-item" href="blank.html">Blank Page</a>
           </div>
         </li> -->
-        
+
       </ul>
 
       <div id="content-wrapper">
@@ -149,12 +149,12 @@
           <ol class="breadcrumb">
             <li class="breadcrumb-item active" style="font-size: 30px;color:black;">I can help! </li>
           </ol>
-           
+
 		  <?php
 $host = "psql-hope.postgres.database.azure.com";
 $database = "hope";
-$user = "sumedh@psql-hope";
-$password = "sumSVR@1";
+$user = "usr@psql-hope";
+$password = "pwd";
 
 // Initialize connection object.
 $conn= pg_connect("host=$host dbname=$database user=$user password=$password");
@@ -179,8 +179,8 @@ if(pg_query($conn, $query))
 {
 	$query2=pg_query($conn,"Select * from need_help");
 	while($row= pg_fetch_row($query2))
-	{ 
-		
+	{
+
 	?>
     <script>
      locations.push([<?php echo $row[0];?>,<?php echo $row[3];?>,<?php echo $row[4];?>]);
@@ -202,8 +202,8 @@ if(pg_query($conn, $query))
                   <input type="radio"  name="typeof" value="stock">Stock
                 </label>
                   </div> -->
-                   
-            
+
+
         </center>
 
       </div>
@@ -237,7 +237,7 @@ if(pg_query($conn, $query))
     </div>
 
 
-    
+
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -256,13 +256,13 @@ if(pg_query($conn, $query))
     <script src="js/demo/chart-area-demo.js"></script>
     <script src="js/demo/chart-bar-demo.js"></script>
     <script src="js/demo/chart-pie-demo.js"></script>
-    
-    
 
 
 
 
-    
+
+
+
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyALw2fPTrMLpQXUsUtNEMhNHN4a7Z9Ks18&callback=initMap">
     </script>
@@ -306,9 +306,9 @@ if(pg_query($conn, $query))
         }
 
 
-         
 
-      for (i = 0; i < locations.length; i++) {  
+
+      for (i = 0; i < locations.length; i++) {
          marker = new google.maps.Marker({
         position: new google.maps.LatLng(locations[i][1], locations[i][2]),
         map: map
@@ -329,7 +329,7 @@ if(pg_query($conn, $query))
   //   title: 'Hello World!'
   // });
 
-     
+
 
 
       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
@@ -344,10 +344,10 @@ if(pg_query($conn, $query))
 
 
     </script>
-    
 
 
-    
+
+
 
   </body>
 

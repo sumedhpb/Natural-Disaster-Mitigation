@@ -1,11 +1,11 @@
 <?php
 $servername="localhost";
 $username="postgres";
-$password="sumSVR@1";
+$password="pwd";
 session_start();
 
 
-$conn=pg_connect("host=localhost port=5432 dbname=anathashishu user=postgres password=sumSVR@1");
+$conn=pg_connect("host=localhost port=5432 dbname=anathashishu user=postgres password=pwd");
 
 if(!$conn)
 	echo "Connection failed to the database";
@@ -119,7 +119,7 @@ if (pg_send_query($conn, $query)) {
    		}
       }
     }
-  
+
 
 
 ?>

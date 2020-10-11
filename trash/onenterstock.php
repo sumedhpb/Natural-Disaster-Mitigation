@@ -1,11 +1,11 @@
 <?php
 $servername="localhost";
 $username="postgres";
-$password="sumSVR@1";
+$password="pwd";
 session_start();
 
 
-$conn=pg_connect("host=localhost port=5432 dbname=anathashishu user=postgres password=sumSVR@1");
+$conn=pg_connect("host=localhost port=5432 dbname=anathashishu user=postgres password=pwd");
 
 if(!$conn)
 	echo "Connection failed to the database";
@@ -98,7 +98,7 @@ if(isset($_POST['wheat']) && $_POST['wheat']!=NULL)
   {
         $quan=$_POST['wheat'];
         echo $_POST['wheat'];
-       
+
         $put="insert into Donation_Kind values('$id','wheat',$quan)";
         pg_query($conn,$put);
 
@@ -203,7 +203,7 @@ if(isset($_POST['salt']) && $_POST['salt']!=NULL)
 
 
   }
-  
+
 if(isset($_POST['sugar']) && $_POST['sugar']!=NULL)
 
   {
